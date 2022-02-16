@@ -20,7 +20,7 @@ export default function Dashboard({ code }) {
 
     function chooseTrack(track) {
         setPlayingTrack(track)
-        setSearch('')
+        setSearch("")
         setLyrics("")
     }
 
