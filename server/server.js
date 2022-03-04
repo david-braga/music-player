@@ -27,7 +27,7 @@ app.post('/refresh', (req, res) => {
                     accessToken: data.body.accessToken,
                     expiresIn: data.body.expiresIn,
                 })
-                //Save the access tokenso that it's not used in future calls
+                //Save the access token so that it's not used in future calls
                 spotifyApi.setAccessToken(data.body["access_token"]);
             })
         .catch(() => {
